@@ -35,7 +35,7 @@
         });
          socket.on('spo', function(msg){
          	var time =new Date().toLocaleString()
-          	$('#messages').append($('<li>').text("time: "+time", xbid: "msg.xbid+" ,spo2: "msg.spo2+" ,bpm: "msg.bpm);
+          	$('#messages').append($('<li>').text("time: "+time+", xbid: "+msg.xbid+" ,spo2: "+msg.spo2+" ,bpm: "+msg.bpm);
           	window.scrollTo(0, document.body.scrollHeight);
         });
 
