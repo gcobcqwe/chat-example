@@ -34,8 +34,9 @@
           window.scrollTo(0, document.body.scrollHeight);
         });
          socket.on('spo', function(msg){
-          $('#messages').append($('<li>').text(msg));
-          window.scrollTo(0, document.body.scrollHeight);
+         	var time =new Date().toLocaleString()
+          	$('#messages').append($('<li>').text("time: "+time", xbid: "msg.xbid+" ,spo2: "msg.spo2+" ,bpm: "msg.bpm);
+          	window.scrollTo(0, document.body.scrollHeight);
         });
 
       });
